@@ -6,6 +6,9 @@ import java.rmi.server.UnicastRemoteObject;
 import com.interf.test.TestRemote;
 
 /**
+ * Implementation of the interface API, responsible for handling the specific function
+ * to be done when a client calls a method from the server.
+ *
  * @author   Francisco Gutiérrez <fsalvador23@gmail.com>, Mauricio Graciano <mau.graci@gmail.com>
  * @version  0.2
  * @since    2017-02-22
@@ -33,7 +36,8 @@ public class ServerDefinition extends UnicastRemoteObject implements TestRemote 
 		if (a == null || b == null) {
 			return null;
 		}
-
+        
+        // If so, return the multiplication
 		return a * b;
 	}
 
@@ -46,8 +50,8 @@ public class ServerDefinition extends UnicastRemoteObject implements TestRemote 
             copy += string.charAt(i - 1);
         }
 
-		// and check the inverted string is the same as the recieved one.
-        return copy.equals(string);
+		// and if check the inverted string is the same as the recieved one.
+        return copy.equalsIgnoreCase(string);
 	}
 
 }
