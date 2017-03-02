@@ -1,0 +1,4 @@
+#!/bin/bash
+
+javac -d bin -sourcepath Server/src:Interface/src Server/src/com/innova4d/server/ServerLauncher.java\
+&& java -cp bin com/innova4d/server/ServerLauncher

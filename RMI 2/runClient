@@ -1,0 +1,4 @@
+#!/bin/bash
+
+javac -d bin -sourcepath Client/src:Interface/src Client/src/com/innova4d/client/ClientLauncher.java\
+&& java -cp bin com/innova4d/client/ClientLauncher
