@@ -24,12 +24,13 @@ public class ClientLauncher implements Constant {
 		
         // Y recupera la RemoteInterface definida por el ID en Constant.RMI_ID.
         final RemoteInterface remote = (RemoteInterface) registry.lookup(RMI_ID);
-	
-		// Iniciar el cliente de la interfaz gráfica.
+	        
+        // Iniciar el cliente de la interfaz gráfica.
 		ClientLauncher.guiClient(remote);
-        
+       
         // Inicia todos los vehiculos
         ClientLauncher.vehiculosClient(remote);
+ 
     }
 
     /**
@@ -46,12 +47,14 @@ public class ClientLauncher implements Constant {
         for (int i = 0; i < ANCHO; i++) { 
 
             // Creo los vehiculos concretos.
-            final Vehiculo v = Factory.getVehiculo(i);
+            //final Vehiculo v = Factory.getVehiculo(i);
+            
+            final Vehiculo v = remote.createVehiculo(i);
             
             // Si el vehiculo existe, enlazate con la torre de control:
             if (v != null) {
                 // Primero, se agrega el vehiculo a la torre de control,
-                remote.checkInVehiculo(v);
+                //remote.checkInVehiculo(v);
                 
                 // Y despues, muevelo a traves de la pista en su carril (x)
                 // a una velocidad constante (velocidad).
@@ -60,14 +63,15 @@ public class ClientLauncher implements Constant {
 		            @Override
 		            public void run() {
 			            try {
-				            remote.moverVehiculo(remote.getVehiculo(v.getId(), v.getX()), v.getX());
+				            //remote.moverVehiculo(remote.getVehiculo(v.getId(), v.getX()), v.getX());
+				            remote.moverVehiculo(v, v.getX());
 			            } catch (Exception e) {
 				            e.printStackTrace();
                             System.out.println("\n\nTerminating Program\n");
                             System.exit(1);
 			            }
 		            }
-		        }, 0, v.getVelocidad(), TimeUnit.SECONDS);
+		        }, v.getVelocidad(), v.getVelocidad(), TimeUnit.SECONDS);
             }         
         }
 
@@ -87,7 +91,7 @@ public class ClientLauncher implements Constant {
 		  @Override
 		  public void run() {
 			try {
-				System.out.println(ClientLauncher.printPista(remote.getMapaPistas()));
+				System.out.print(ClientLauncher.printPista(remote.getMapaPistas()));
 			} catch (RemoteException e) {
 				e.printStackTrace();
                 System.out.println("\n\nTerminating Program\n");
@@ -105,7 +109,7 @@ public class ClientLauncher implements Constant {
 	 * @throws RemoteException
 	 */
 	private static String printPista(Vehiculo[][] vs) throws RemoteException {
-		String output = "=== Pista ===\n";
+		String output = "\r=== Pista ===\n";
         String name;
         
         // Recorre las filas, de arriba para abajo.
@@ -125,11 +129,11 @@ public class ClientLauncher implements Constant {
             }
             
             // Escoje el tipo de vehiculo que recorre un carril e imprimelo.
-		    output += Factory.getName(i) + "\n";            		    
+		    output = "\r" + output + Factory.getName(i) + "\n";            		    
 		}
 
         //Regresa el resultado 
-		return output + "\n";
+		return "\r" + output + "\n";
 	}
 
 }

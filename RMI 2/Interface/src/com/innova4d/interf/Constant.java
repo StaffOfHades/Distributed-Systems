@@ -19,9 +19,9 @@ public interface Constant {
     String RMI_ADDRESS = "localhost"; 
     
     // El ancho (cantidad de vehiculos) que soporta la pista, definido en coordenas X
-    int ANCHO = 8;
+    int ANCHO = 6;
     
     // La altura (largo) que soprta la pista, definida en coordenadas Y
-    int ALTURA = 16;
+    int ALTURA = 30;
 
 }

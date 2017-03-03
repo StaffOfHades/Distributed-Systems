@@ -52,6 +52,7 @@ public class ControlTower extends UnicastRemoteObject implements RemoteInterface
  	* @param id El identificador del vehiculo
  	* @param c  El carril donde se encuentra el vehiculo.
  	*/
+    @Deprecated
 	@Override
 	public Vehiculo getVehiculo(String id, int c) throws RemoteException {
 		Vehiculo v = null;
@@ -67,11 +68,20 @@ public class ControlTower extends UnicastRemoteObject implements RemoteInterface
 		return v;
 	}
 
+    @Deprecated
 	@Override
 	public Boolean checkInVehiculo(Vehiculo v) throws RemoteException {
 		if ( this.mapaPista[ v.getX() ][ v.getY() ] == null)
 			this.mapaPista[v.getX()][v.getY()] = v;
 		return true;
+	}
+
+	@Override
+	public Vehiculo createVehiculo(int c) throws RemoteException {
+        Vehiculo v = Factory.getVehiculo(c);
+        if ( v != null && this.mapaPista[ v.getX() ][ v.getY() ] == null)
+			this.mapaPista[v.getX()][v.getY()] = v;
+		return v;
 	}
 
 }

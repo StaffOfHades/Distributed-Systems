@@ -8,8 +8,9 @@ public class Factory {
     private final static int AVION = 0;
     private final static int AUTO = 1;
     private final static int BOEING = 2;
-    private final static int UFO = 3;
-    
+    private final static int UFO = 4;
+    private final static int TRANVIA = 3; 
+   
     public static String getName(int i) throws RemoteException {
         String name = "<- ";
         switch (i) {
@@ -24,6 +25,9 @@ public class Factory {
                 break;
             case UFO:
                 name += "UFO";
+                break;
+            case TRANVIA:
+                name += "Tranvia";
                 break;
             default:
                 name = "-> Libre";
@@ -44,10 +48,13 @@ public class Factory {
                 v = new Avion("Lufthansa", AVION, 0, 2);
                 break;
             case BOEING:
-                v = new Boeing("TrasAtlantico", BOEING, 0, 3);
+                v = new Boeing("Atlantico", BOEING, 0, 3);
                 break;
             case UFO:
                 v = new UFO("SCOUT", UFO, 0, 1);
+                break;
+            case TRANVIA:
+                v = new Tranvia("Transporte", TRANVIA, 0, 4);
                 break;
             default:
                 v = null;
