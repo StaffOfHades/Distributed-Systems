@@ -1,0 +1,19 @@
+#! /bin/bash
+if  [ ! -z "$1" ]; then if [ "$1" = "-c" ]; then
+    ./buildCenaFilosofos
+    if [ "$?" -ne "0" ]; then
+        printf "\n\n    Unable to build a new version\n\n" >&2
+        exit 1
+    fi; fi
+else
+    echo "Unexpected argument recieved ; did you mean -c (compile)?"
+fi
+cmd=0
+if [ -z "$2" ]; then
+    echo "Expected a number" >&2
+    exit 2
+else
+    cmd=$2
+fi
+    
+java -cp bin com/Innova4d/dpm/CenaFilosofos "$cmd"

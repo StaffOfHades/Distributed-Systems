@@ -1,0 +1,18 @@
+#! /bin/bash
+if  [ ! -z "$1" ] && [ "$1" = "-c" ]; then
+    ./buildFilosofos
+    if [ "$?" -ne "0" ]; then
+        printf "\n\n    Unable to build a new version\n\n" >&2
+        exit 3;
+    fi
+else
+    echo "Unkown command $1. Did you mean -c (compile) ?" >&2
+    exit 1;
+fi
+amount=0
+if [ ! -z "$2" ]; then amount=$2
+else
+    echo "Expected a number" >&2
+    exit 2;
+fi
+java -cp bin com/Innova4d/DP/CenaFilosofos "$amount"
