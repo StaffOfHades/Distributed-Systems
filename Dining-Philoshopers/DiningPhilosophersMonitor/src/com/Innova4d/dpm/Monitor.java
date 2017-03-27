@@ -4,9 +4,6 @@ package com.Innova4d.dpm;
  * El monitor asegura que el filósofo levantará únicamente
  * ambos cubiertos cuando sus vecinos nó estén comiendo.
  *
- * @author Francisco Gutiérrez
- * @version 1.0v
- *
  */
 class Monitor {
 	// El monitor conoce los diferentes estados para cada filósofo.
@@ -42,7 +39,6 @@ class Monitor {
 		// Mientras los vecinos comen, esperar...
 		while (losVecinosComen(idFilosofo)) {
 			/*
-			 * Completar código.
 			 * Mientras los vecinos comen.
 			 * El filósofo debería estar pensando.
 			 */
