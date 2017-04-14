@@ -38,7 +38,7 @@ CREATE TABLE `country` (
 
 LOCK TABLES `country` WRITE;
 /*!40000 ALTER TABLE `country` DISABLE KEYS */;
-INSERT INTO `country` VALUES ('Alemania','Berlín',52.5077843,13.3517587),('Austria','Vienna',48.1998585,16.3700744),('Bélgica','Bruselas',50.8083158,4.3849209),('Dinamarca','Copenhagen',55.6864627,12.5918263),('España','Madrid',40.4160947,-3.6973632),('Finlandia','Helsinki',60.1685662,24.9351516),('Francia','Paris',48.8648275,2.292344),('Grecia','Atenas',37.9773269,23.7406908),('Hungría','Budapest',47.516701,19.0278825),('Irlanda','Dublin',53.3303151,-6.2387368),('Italia','Roma',41.9133032,12.5097257),('Países Bajos','Amsterdam',52.0899761,4.3059916),('Polonia','Warsaw',52.22499,20.99128),('Portugal','Lisboa',38.7375761,-9.2019543),('Reino Unido','Londres',51.513845,-0.1422097),('República Checa','Prague',50.0801273,14.4168633),('Rumanía','Bucharest',50.0801273,14.4168633),('Russia','Moscow',55.74326,37.589527),('Suecia','Stockolmo',59.3320685,18.0830599);
+INSERT INTO `country` VALUES ('Alemania','Berlín',52.508123,13.351262),('Austria','Vienna',48.212552,16.366824),('Bélgica','Bruselas',50.8083158,4.3849209),('Dinamarca','Copenhagen',55.6864627,12.5918263),('España','Madrid',40.4160947,-3.6973632),('Finlandia','Helsinki',60.1685662,24.9351516),('Francia','Paris',48.8648275,2.292344),('Grecia','Atenas',37.9773269,23.7406908),('Hungría','Budapest',47.516701,19.0278825),('Irlanda','Dublin',53.3303151,-6.2387368),('Italia','Roma',41.91324,12.509641),('Países Bajos','Amsterdam',52.0899761,4.3059916),('Polonia','Warsaw',52.22499,20.99128),('Portugal','Lisboa',38.7375761,-9.2019543),('Reino Unido','Londres',51.513004,-0.143686),('República Checa','Prague',50.0801273,14.4168633),('Rumanía','Bucharest',50.0801273,14.4168633),('Russia','Moscow',55.74326,37.589527),('Suecia','Stockolmo',59.3320685,18.0830599);
 /*!40000 ALTER TABLE `country` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-04-13 21:50:15
+-- Dump completed on 2017-04-14 12:45:30

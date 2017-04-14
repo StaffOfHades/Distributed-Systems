@@ -5,22 +5,9 @@ body{
     background: #F0F0F0;
     font-family: helvetica, arial;
     font-size: 13px;
+    color: rgba(0, 0, 0, 0.539);
 }
-/*
- * La clase Box, para nuestra aplicación,
- * cada caja es un servicio Web implementado en la interfaz.
- */
-.box {
-    display: block;
-    background: #FFFFFF;
-    padding: 15px;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.1211); /* #1F0000000*/
-    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75); /* CSS3 */
-    width: 525px;
-    color: rgba(0, 0, 0, 0.8711); /* #DF00000 */
-    position: relative;
-}
+
 /*
  * Cambiamos el estilo del tag h1
  */
@@ -28,6 +15,7 @@ h1 {
     font-family: impact;
     color: #F39C12;
 }
+
 /*
  * agregamos un margen a todos los botones.
  */
@@ -43,14 +31,29 @@ button {
     top: 7px;
     bottom: 7px;
 }
+
+/*
+ * La clase Box, para nuestra aplicación,
+ * cada caja es un servicio Web implementado en la interfaz.
+ */
+.box {
+    display: block;
+    background: #FFFFFF;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1211); /* #1F0000000*/
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75); /* CSS3 */
+    width: 525px;
+    color: rgba(0, 0, 0, 0.539);
+    position: relative;
+}
+
 /*
  * Los resultados deberían mostrarse sobre la mima línea.
  * (Intenta quitar ésta propiedad y actualizar la página para ver que pasa).
  */
 .result {
+    margin-left: 5px;
     display: inline;
     color: rgba(0, 0, 0, 0.8711);
-}
-body {
-    color: rgba(0, 0, 0, 0.539);
 }

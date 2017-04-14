@@ -22,7 +22,7 @@ public class MashupController extends Controller {
      * <code>GET</code> request with a path of <code>/</code>.
      */
     public Result index() {
-        return ok(index.render("Mashup", 1));
+        return ok(mashup.render("Mashup"));
     }
 
 }
