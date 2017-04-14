@@ -1,0 +1,16 @@
+name := """play-java-webservices"""
+
+version := "1.0-SNAPSHOT"
+
+lazy val root = (project in file(".")).enablePlugins(PlayJava)
+
+scalaVersion := "2.11.7"
+
+libraryDependencies ++= Seq(
+  javaJdbc,
+  cache,
+  javaWs
+)
+
+jdbc
+"org.mariadb.jdbc" % "mariadb-java-client" % "1.5.9"

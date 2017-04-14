@@ -1,0 +1,53 @@
+@(title: String)
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@title</title>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/assets/stylesheets/mashup-style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script async
+        defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLgnK_h1s_vwa-shWZr5oxgI_OPk_SF-Y&callback"
+        type="text/javascript"></script>
+    <script src="/assets/javascripts/mashupscript.js"></script>
+</head>
+<body>
+    <div id="message" class="intro">
+        <h1><u style="color: #1abc9c;">Mashup</u>, aplicaciones web híbridas</h1>
+        <p>
+            Esta pequeña aplicación es un <b>Mashup</b>, emplea diversos servicios <b>RESTful</b>
+            para integrarlos en una sola aplicación.
+        </p>
+        Con ésta aplicación aprenderás a:
+        <ul>
+            <li>Llamar servicios Web desde diferentes fuentes de datos</li>
+            <li>Llamar servicios Web utilizando <u>jQuery</u> y <u>Javascript</u></li>
+            <li>Desarrollar una página Web básica con HTML5 y Javascript</li>
+            <li>Implementar una vista simple con Playframework</li>
+        </ul>
+        Servicios utilizados:
+        <ul>
+            <li>Open Weather API</li>
+            <li>Google Maps</li>
+            <li>Flickr API</li>
+            <li>Wikipedia API</li>
+        </ul>
+        <div id="close"> [x] <u>Cerrar ventana</u></div>
+    </div>
+    <div class="intro">
+        <h1><u style="color: #1abc9c;">Mashup</u>, Negocios Internacionales</h1>
+        <p width="100px">
+            Nuestra aplicación permite obtener información básica de un país.
+            Para comenzar, selecciona un país de la lista y presiona el botón enviar.
+        </p>
+        <select id="select">
+            <option value="germany">Alemania</option>
+            <option value="austria">Austria</option>
+            <option value="italy">Italia</option>
+            <option value="london">Reino Unido</option>
+        </select>
+        <button id="button" type="button">Consultar</button>
+        <div id="app"></div>
+    </div>
+</body>
+</html>

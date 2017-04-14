@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: org.mariadb.jdbc.DateTest
+-------------------------------------------------------------------------------
+Tests run: 23, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.977 sec <<< FAILURE! - in org.mariadb.jdbc.DateTest
+serverTimezone(org.mariadb.jdbc.DateTest)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.mariadb.jdbc.DateTest.serverTimezone(DateTest.java:430)
+

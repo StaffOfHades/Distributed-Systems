@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.mariadb.jdbc.MultiTest
+-------------------------------------------------------------------------------
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 6.519 sec - in org.mariadb.jdbc.MultiTest

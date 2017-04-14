@@ -1,0 +1,54 @@
+@(title: String)
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@title</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="/assets/javascripts/mainscript.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/stylesheets/main-style.css">
+</head>
+<body>
+    <h1>Multiplicación</h1>
+    <div id="multiplicacion" class="box">
+        Multiplicar:
+        <input id="inputm1" type="number"> x <input id="inputm2" type="number"> =
+        <div id="multiresult" class="result"></div>
+        <button id="multiplica" type="button">Multiplicar</button>
+    </div>
+    <h1>Palíndromo</h1>
+    <div id="palindromo" class="box">
+        ¿Es Palíndromo?
+        <input id="palinput" type="text">
+        <div id="paliresult" class="result"></div>
+        <button id="checapalindromo" type="button">Checar</button>
+    </div>
+    <h1>Temperatura</h1>
+    <div id="temperatura" class="box">
+        Farenheit a Centigrado:
+        <input id="tempinput" type="number"> Fº =
+        <div id="tempresult" class="result"></div>
+        <button id="conviertetemp" type="button">Convertir</button>
+    </div>
+    <h1>Moneda</h1>
+    <div id="moneda" class="box">
+        Dollares a Pesos:
+        <input id="monedainput" type="number"> USD =
+        <div id="monedaresult" class="result"></div>
+        <button id="conviertemoneda" type="button">Convertir</button>
+    </div>
+    <h1>Capital</h1>
+    <div id="capital" class="box">
+        Capital de:
+        <select id="capitalinput" name="capital"></select>
+        <div id="capitalresult" class="result"></div>
+        <button id="buscacapital" type="button">Buscar</button>
+    </div>
+    <h1>Embajada Mexicana</h1>
+    <div id="embajada" class="box">
+        Embajada de Mexico en:
+        <select id="embajadainput" name="embajada"></select>
+        <div id="embajadaresult" class="result"></div>
+        <button id="buscaembajada" type="button">Buscar</button>
+    </div>
+</body>
+</html>

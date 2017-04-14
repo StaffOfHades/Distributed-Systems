@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.mariadb.jdbc.BufferTest
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 5.288 sec - in org.mariadb.jdbc.BufferTest

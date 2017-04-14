@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.mariadb.jdbc.ExecuteBatchTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 2.373 sec - in org.mariadb.jdbc.ExecuteBatchTest

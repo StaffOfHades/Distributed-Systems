@@ -1,0 +1,56 @@
+/*
+ * Definir el estilo del tag Body
+ */
+body{
+    background: #F0F0F0;
+    font-family: helvetica, arial;
+    font-size: 13px;
+}
+/*
+ * La clase Box, para nuestra aplicación,
+ * cada caja es un servicio Web implementado en la interfaz.
+ */
+.box {
+    display: block;
+    background: #FFFFFF;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1211); /* #1F0000000*/
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75); /* CSS3 */
+    width: 525px;
+    color: rgba(0, 0, 0, 0.8711); /* #DF00000 */
+    position: relative;
+}
+/*
+ * Cambiamos el estilo del tag h1
+ */
+h1 {
+    font-family: impact;
+    color: #F39C12;
+}
+/*
+ * agregamos un margen a todos los botones.
+ */
+button {
+    background: #FFFFFF;
+    border: 2px solid #0071BC;
+    border-radius: 7px;
+    color: #0071BC;
+    width: 80px;
+    margin: 7px;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    bottom: 7px;
+}
+/*
+ * Los resultados deberían mostrarse sobre la mima línea.
+ * (Intenta quitar ésta propiedad y actualizar la página para ver que pasa).
+ */
+.result {
+    display: inline;
+    color: rgba(0, 0, 0, 0.8711);
+}
+body {
+    color: rgba(0, 0, 0, 0.539);
+}

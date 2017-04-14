@@ -1,0 +1,37 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home controlller
+GET     /                               controllers.HomeController.index
+
+# Mashup controller
+GET     /mashup                         controllers.MashupController.index
+
+# An example controller showing how to use dependency injection
+GET     /count                          controllers.CountController.count
+
+# An example controller showing how to write asynchronous code
+GET     /message                        controllers.AsyncController.message
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file                   controllers.Assets.versioned(path="/public", file: Asset)
+
+# A test controller using Json to pass data
+GET     /test/multiplication/:a/:b      controllers.TestController.getMultiplication(a: Int, b: Int)
+GET     /test/palindrome/:a             controllers.TestController.getPalindrome(a: String)
+
+# A simple controller using Json to show some example services
+GET     /services/convertDollars/:a     controllers.ServicesController.convertDollars(a: Int)
+GET     /services/convertTemp/:a        controllers.ServicesController.convertTemp(a: Int)
+GET     /services/convertTempK/:a        controllers.ServicesController.convertTempK(a: Double)
+GET     /services/getCapital/:a         controllers.ServicesController.getCapital(a: String)
+GET     /services/getEmbassy/:a         controllers.ServicesController.getEmbassy(a: String)
+GET     /services/getCountries         controllers.ServicesController.getCountries
+
+# A test controller using scala
+GET     /test/countries                 controllers.TestControllerInject.index
+GET     /test/countries/:a              controllers.TestControllerInject.column(a: String)
+GET     /test/capital/:a              controllers.TestControllerInject.capital(a: String)
+GET     /test/embassy/:a              controllers.TestControllerInject.embassy(a: String)
+

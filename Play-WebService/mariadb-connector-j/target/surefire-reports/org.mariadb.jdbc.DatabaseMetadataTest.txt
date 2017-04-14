@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: org.mariadb.jdbc.DatabaseMetadataTest
+-------------------------------------------------------------------------------
+Tests run: 44, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 1.837 sec <<< FAILURE! - in org.mariadb.jdbc.DatabaseMetadataTest
+identifierCaseSensitivity(org.mariadb.jdbc.DatabaseMetadataTest)  Time elapsed: 0.045 sec  <<< FAILURE!
+java.lang.AssertionError: should not get there, since names are case-insensitive
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.mariadb.jdbc.DatabaseMetadataTest.identifierCaseSensitivity(DatabaseMetadataTest.java:570)
+

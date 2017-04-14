@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.mariadb.jdbc.SslTest" time="0" tests="35" errors="0" skipped="35" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.77-b03"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/mauriciog/Documents/Distributed Systems/Play-WebService/mariadb-connector-j"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/mauriciog/Documents/Distributed Systems/Play-WebService/mariadb-connector-j"/>
+    <property name="java.runtime.version" value="1.8.0_77-b03"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/2_/q30w7_x9141b5k2ngzqqzypm0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/mauriciog/.mvnvm/apache-maven-3.3.9/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/mauriciog/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.3"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/mauriciog"/>
+    <property name="user.timezone" value="America/Mexico_City"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="mauriciog"/>
+    <property name="java.class.path" value="/Users/mauriciog/.mvnvm/apache-maven-3.3.9/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package -e"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_77"/>
+    <property name="java.ext.dirs" value="/Users/mauriciog/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/mauriciog/.mvnvm/apache-maven-3.3.9"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="wrongCipherForTls11" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.wrongCipherForTls11
+]]></system-out>
+  </testcase>
+  <testcase name="testTruststoreAndClientKeystoreWrongPassword" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.testTruststoreAndClientKeystoreWrongPassword
+]]></system-out>
+  </testcase>
+  <testcase name="useSslForceTlsV11" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.useSslForceTlsV11
+]]></system-out>
+  </testcase>
+  <testcase name="useSslForceTlsV12" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.useSslForceTlsV12
+]]></system-out>
+  </testcase>
+  <testcase name="testTruststoreWithWrongCert" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.testTruststoreWithWrongCert
+]]></system-out>
+  </testcase>
+  <testcase name="testServerCertFile" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.testServerCertFile
+]]></system-out>
+  </testcase>
+  <testcase name="testTruststore" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.testTruststore
+]]></system-out>
+  </testcase>
+  <testcase name="testServerCertClasspathFile" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.testServerCertClasspathFile
+]]></system-out>
+  </testcase>
+  <testcase name="testServerCertString" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.testServerCertString
+]]></system-out>
+  </testcase>
+  <testcase name="wrongCipherMysqlOptionCompatibility" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.wrongCipherMysqlOptionCompatibility
+]]></system-out>
+  </testcase>
+  <testcase name="useSslForceTlsV1" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.useSslForceTlsV1
+]]></system-out>
+  </testcase>
+  <testcase name="wrongCipher" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.wrongCipher
+]]></system-out>
+  </testcase>
+  <testcase name="testUnknownProtocol" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.testUnknownProtocol
+]]></system-out>
+  </testcase>
+  <testcase name="conc71" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.conc71
+]]></system-out>
+  </testcase>
+  <testcase name="testAliases" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.testAliases
+]]></system-out>
+  </testcase>
+  <testcase name="testTrustStoreWithPassword" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.testTrustStoreWithPassword
+]]></system-out>
+  </testcase>
+  <testcase name="useSsl" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.useSsl
+]]></system-out>
+  </testcase>
+  <testcase name="useSslForceTlsV12AndCipher" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.useSslForceTlsV12AndCipher
+]]></system-out>
+  </testcase>
+  <testcase name="testBadOptionEnabledSslProtocolSuites" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.testBadOptionEnabledSslProtocolSuites
+]]></system-out>
+  </testcase>
+  <testcase name="testClientKeystore" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.testClientKeystore
+]]></system-out>
+  </testcase>
+  <testcase name="testClientKeyStoreProperties" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.testClientKeyStoreProperties
+]]></system-out>
+  </testcase>
+  <testcase name="testClientKeyStoreWithPrivateKeyPwd" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.testClientKeyStoreWithPrivateKeyPwd
+]]></system-out>
+  </testcase>
+  <testcase name="testWrongServerCert" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.testWrongServerCert
+]]></system-out>
+  </testcase>
+  <testcase name="testBadServerCertString" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.testBadServerCertString
+]]></system-out>
+  </testcase>
+  <testcase name="useSslForceTlsCombinationWithSpace" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.useSslForceTlsCombinationWithSpace
+]]></system-out>
+  </testcase>
+  <testcase name="testKeyStoreWithProperties" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.testKeyStoreWithProperties
+]]></system-out>
+  </testcase>
+  <testcase name="testTrustedServer" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.testTrustedServer
+]]></system-out>
+  </testcase>
+  <testcase name="testConnectNonSsl" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.testConnectNonSsl
+]]></system-out>
+  </testcase>
+  <testcase name="testServerRefuseProtocol" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.testServerRefuseProtocol
+]]></system-out>
+  </testcase>
+  <testcase name="useSslForceTlsCombinationWithOnlySpace" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.useSslForceTlsCombinationWithOnlySpace
+]]></system-out>
+  </testcase>
+  <testcase name="testTrustStoreWithPasswordProperties" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.testTrustStoreWithPasswordProperties
+]]></system-out>
+  </testcase>
+  <testcase name="testKeyStoreWhenServerTrustedWithProperties" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.testKeyStoreWhenServerTrustedWithProperties
+]]></system-out>
+  </testcase>
+  <testcase name="testTruststoreWithWrongPassword" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.testTruststoreWithWrongPassword
+]]></system-out>
+  </testcase>
+  <testcase name="useSslForceTlsCombination" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.useSslForceTlsCombination
+]]></system-out>
+  </testcase>
+  <testcase name="testTruststoreAndClientKeystore" classname="org.mariadb.jdbc.SslTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[start test : org.mariadb.jdbc.SslTest.testTruststoreAndClientKeystore
+]]></system-out>
+  </testcase>
+</testsuite>

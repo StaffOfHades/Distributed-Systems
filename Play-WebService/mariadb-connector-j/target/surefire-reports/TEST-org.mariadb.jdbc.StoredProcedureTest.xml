@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.mariadb.jdbc.StoredProcedureTest" time="3.424" tests="40" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.77-b03"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/mauriciog/Documents/Distributed Systems/Play-WebService/mariadb-connector-j"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/mauriciog/Documents/Distributed Systems/Play-WebService/mariadb-connector-j"/>
+    <property name="java.runtime.version" value="1.8.0_77-b03"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/2_/q30w7_x9141b5k2ngzqqzypm0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/mauriciog/.mvnvm/apache-maven-3.3.9/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/mauriciog/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.3"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/mauriciog"/>
+    <property name="user.timezone" value="America/Mexico_City"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="mauriciog"/>
+    <property name="java.class.path" value="/Users/mauriciog/.mvnvm/apache-maven-3.3.9/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package -e"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_77"/>
+    <property name="java.ext.dirs" value="/Users/mauriciog/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/mauriciog/.mvnvm/apache-maven-3.3.9"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testHugeNumberOfParameters" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.023"/>
+  <testcase name="testCallableStatementFormat" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.001"/>
+  <testcase name="testCallableThrowException" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.261"/>
+  <testcase name="testCallExecuteErrorBatch" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.002"/>
+  <testcase name="testBitSp" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.026"/>
+  <testcase name="callProcSendNullInOut" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.043"/>
+  <testcase name="testSettingFixedParameter" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.015"/>
+  <testcase name="callWithResultSet" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.013"/>
+  <testcase name="testMultiResultset" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.015"/>
+  <testcase name="callWithStrangeParameter" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.013"/>
+  <testcase name="testDefinerCallableStatement" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.039"/>
+  <testcase name="callUseParameterName" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.002"/>
+  <testcase name="testProcMultiDb" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.048"/>
+  <testcase name="callMultiResultSets" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.001"/>
+  <testcase name="prepareMultiResultSets" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.001"/>
+  <testcase name="meta" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.031"/>
+  <testcase name="testOutputObjectType" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.289"/>
+  <testcase name="testParameterNumber" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.194"/>
+  <testcase name="testResultsetWithInoutParameter" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.127"/>
+  <testcase name="testCommentParser" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.255"/>
+  <testcase name="testOutputObjectTypeFunction" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.489"/>
+  <testcase name="testStreamInOutWithName" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.138"/>
+  <testcase name="testProcedureComment" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.018"/>
+  <testcase name="testFunctionWithSpace" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.024"/>
+  <testcase name="callUseWrongParameterName" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.001"/>
+  <testcase name="callInoutParam" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.001"/>
+  <testcase name="testFunctionCall" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.06"/>
+  <testcase name="testCallableNullSetters" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.096"/>
+  <testcase name="testNoParenthesisCall" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.281"/>
+  <testcase name="testMetaCatalogNoAccessToProcedureBodies" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.038"/>
+  <testcase name="callWithOutParameter" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.015"/>
+  <testcase name="testProcDecimalComa" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.017"/>
+  <testcase name="testFunctionWith2parameters" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.04"/>
+  <testcase name="callFunctionWithNoParameters" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.274"/>
+  <testcase name="testSameProcedureWithDifferentParameters" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.058"/>
+  <testcase name="callSimple" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.003"/>
+  <testcase name="testProcLinefeed" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.121"/>
+  <testcase name="testFunctionWithFixedParameters" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.242"/>
+  <testcase name="testFunctionWithFixedParameter" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.061"/>
+  <testcase name="testCallOtherDb" classname="org.mariadb.jdbc.StoredProcedureTest" time="0.048"/>
+</testsuite>

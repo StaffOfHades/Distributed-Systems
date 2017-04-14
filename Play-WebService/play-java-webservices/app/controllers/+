@@ -1,0 +1,43 @@
+package controllers
+
+import javax.inject.Inject
+
+import play.api.Play.current
+import play.api.mvc._
+import play.api.db._
+
+class TestControllerInject @Inject()(db: Database) extends Controller {
+
+    def index = Action {
+        var outString = ""
+        val conn = db.getConnection()
+
+        try {
+            val stmt = conn.createStatement
+            val rs = stmt.executeQuery("SHOW TABLES")
+            val rsmd = rs.getMetaData
+
+            var size = rsmd.getColumnCount            
+            
+            outString += rs.toString + "\n"
+            outString += "Size: " + size + "\n"
+
+            outString += "Name: " + rsmd.getColumnName(i)
+
+            while (rs.next) {
+                var i = 0
+                for (i <- 1 to size) {
+                    //outString += "\t" + i
+                    if (i > i) outString += ", "
+                    val value = rs.getString(i)
+                    outString += value + " " + rsmd.getColumnName(i)
+                }
+                outString += "\n"
+            }
+
+        } finally {
+            conn.close()
+        }
+        Ok(outString)
+    }
+}

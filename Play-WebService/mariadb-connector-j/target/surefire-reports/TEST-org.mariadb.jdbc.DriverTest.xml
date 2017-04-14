@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.mariadb.jdbc.DriverTest" time="4.658" tests="59" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.77-b03"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/mauriciog/Documents/Distributed Systems/Play-WebService/mariadb-connector-j"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/mauriciog/Documents/Distributed Systems/Play-WebService/mariadb-connector-j"/>
+    <property name="java.runtime.version" value="1.8.0_77-b03"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/2_/q30w7_x9141b5k2ngzqqzypm0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/mauriciog/.mvnvm/apache-maven-3.3.9/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/mauriciog/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.3"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/mauriciog"/>
+    <property name="user.timezone" value="America/Mexico_City"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="mauriciog"/>
+    <property name="java.class.path" value="/Users/mauriciog/.mvnvm/apache-maven-3.3.9/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package -e"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_77"/>
+    <property name="java.ext.dirs" value="/Users/mauriciog/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/mauriciog/.mvnvm/apache-maven-3.3.9"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testResultSetPositions" classname="org.mariadb.jdbc.DriverTest" time="0.002"/>
+  <testcase name="dumpQueryOnSyntaxException" classname="org.mariadb.jdbc.DriverTest" time="0.002"/>
+  <testcase name="testException1" classname="org.mariadb.jdbc.DriverTest" time="0.002"/>
+  <testcase name="preparedTest" classname="org.mariadb.jdbc.DriverTest" time="0.003"/>
+  <testcase name="testEscapes" classname="org.mariadb.jdbc.DriverTest" time="0.001"/>
+  <testcase name="dumpQueryOnException" classname="org.mariadb.jdbc.DriverTest" time="0.581"/>
+  <testcase name="mdev3916" classname="org.mariadb.jdbc.DriverTest" time="0.005"/>
+  <testcase name="testUpdateCountSingle" classname="org.mariadb.jdbc.DriverTest" time="0.001"/>
+  <testcase name="preparedStatementToString" classname="org.mariadb.jdbc.DriverTest" time="0.002"/>
+  <testcase name="tableDotColumnInResultSet" classname="org.mariadb.jdbc.DriverTest" time="0.004"/>
+  <testcase name="testAliasDataSource" classname="org.mariadb.jdbc.DriverTest" time="0.003"/>
+  <testcase name="conj14" classname="org.mariadb.jdbc.DriverTest" time="0.008"/>
+  <testcase name="conj25" classname="org.mariadb.jdbc.DriverTest" time="0.166"/>
+  <testcase name="streamingResult" classname="org.mariadb.jdbc.DriverTest" time="0.099"/>
+  <testcase name="askForBadColumnTest" classname="org.mariadb.jdbc.DriverTest" time="0.007"/>
+  <testcase name="sharedMemory" classname="org.mariadb.jdbc.DriverTest" time="0.001"/>
+  <testcase name="testAliasReplication" classname="org.mariadb.jdbc.DriverTest" time="0.001"/>
+  <testcase name="emptyBatch" classname="org.mariadb.jdbc.DriverTest" time="0.001"/>
+  <testcase name="resultSetHoldability" classname="org.mariadb.jdbc.DriverTest" time="0.013"/>
+  <testcase name="floatingNumbersTest" classname="org.mariadb.jdbc.DriverTest" time="0.002"/>
+  <testcase name="testSyntaxError" classname="org.mariadb.jdbc.DriverTest" time="0.001"/>
+  <testcase name="getStatementTest" classname="org.mariadb.jdbc.DriverTest" time="0.001"/>
+  <testcase name="testAutocommit" classname="org.mariadb.jdbc.DriverTest" time="0.005"/>
+  <testcase name="bigAutoIncTest" classname="org.mariadb.jdbc.DriverTest" time="0.015"/>
+  <testcase name="updateTest" classname="org.mariadb.jdbc.DriverTest" time="0.008"/>
+  <testcase name="autoInc2Test" classname="org.mariadb.jdbc.DriverTest" time="0.002"/>
+  <testcase name="isolationLevel" classname="org.mariadb.jdbc.DriverTest" time="0.004"/>
+  <testcase name="isValidTest" classname="org.mariadb.jdbc.DriverTest" time="0.001"/>
+  <testcase name="conj1" classname="org.mariadb.jdbc.DriverTest" time="3.126"/>
+  <testcase name="connectFailover" classname="org.mariadb.jdbc.DriverTest" time="0.003"/>
+  <testcase name="ralfTest" classname="org.mariadb.jdbc.DriverTest" time="0.009"/>
+  <testcase name="testExceptionDivByZero" classname="org.mariadb.jdbc.DriverTest" time="0.001"/>
+  <testcase name="askForBadColumnIndexTest" classname="org.mariadb.jdbc.DriverTest" time="0.006"/>
+  <testcase name="namedPipeWithoutHost" classname="org.mariadb.jdbc.DriverTest" time="0.001"/>
+  <testcase name="autoIncTest" classname="org.mariadb.jdbc.DriverTest" time="0.008"/>
+  <testcase name="manyColumnsTest" classname="org.mariadb.jdbc.DriverTest" time="0.118"/>
+  <testcase name="ansiQuotes" classname="org.mariadb.jdbc.DriverTest" time="0.012"/>
+  <testcase name="testConnectWithDb" classname="org.mariadb.jdbc.DriverTest" time="0.008"/>
+  <testcase name="checkStreamingWithoutResult" classname="org.mariadb.jdbc.DriverTest" time="0.002"/>
+  <testcase name="testUpdateCountMulti" classname="org.mariadb.jdbc.DriverTest" time="0.003"/>
+  <testcase name="testPreparedWithNull" classname="org.mariadb.jdbc.DriverTest" time="0.001"/>
+  <testcase name="noBackslashEscapes2" classname="org.mariadb.jdbc.DriverTest" time="0.032"/>
+  <testcase name="findColumnTest" classname="org.mariadb.jdbc.DriverTest" time="0.003"/>
+  <testcase name="unsignedTest" classname="org.mariadb.jdbc.DriverTest" time="0.001"/>
+  <testcase name="namedPipeBusyTest" classname="org.mariadb.jdbc.DriverTest" time="0.007"/>
+  <testcase name="namedPipe" classname="org.mariadb.jdbc.DriverTest" time="0.001"/>
+  <testcase name="transactionTest" classname="org.mariadb.jdbc.DriverTest" time="0.022"/>
+  <testcase name="createDbWithSpacesTest" classname="org.mariadb.jdbc.DriverTest" time="0.011"/>
+  <testcase name="localSocket" classname="org.mariadb.jdbc.DriverTest" time="0.164"/>
+  <testcase name="testPreparedStatementsWithQuotes" classname="org.mariadb.jdbc.DriverTest" time="0.002"/>
+  <testcase name="streamingResultSet" classname="org.mariadb.jdbc.DriverTest" time="0.001"/>
+  <testcase name="noBackslashEscapes" classname="org.mariadb.jdbc.DriverTest" time="0.007"/>
+  <testcase name="testConnectorJurl" classname="org.mariadb.jdbc.DriverTest" time="0.002"/>
+  <testcase name="doQuery" classname="org.mariadb.jdbc.DriverTest" time="0.007"/>
+  <testcase name="testPreparedStatementsWithComments" classname="org.mariadb.jdbc.DriverTest" time="0.003"/>
+  <testcase name="testUpdateCountProcedure" classname="org.mariadb.jdbc.DriverTest" time="0.145"/>
+  <testcase name="savepointTest" classname="org.mariadb.jdbc.DriverTest" time="0.005"/>
+  <testcase name="bigUpdateCountTest" classname="org.mariadb.jdbc.DriverTest" time="0.005"/>
+  <testcase name="badQuery" classname="org.mariadb.jdbc.DriverTest" time="0.001"/>
+</testsuite>

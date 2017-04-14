@@ -1,0 +1,19 @@
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+@(message: String, file: Int)
+
+
+@if(file == 0) {
+    @*
+     * Call the `main` template with one arguments. The first
+     * argument is a `String`.
+     *@
+    @main(message)
+} else {
+    @if(file == 1) {
+        @mashup(message)
+    }
+}
+
