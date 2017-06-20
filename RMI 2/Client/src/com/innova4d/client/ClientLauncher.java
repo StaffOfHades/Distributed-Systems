@@ -9,14 +9,34 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-import com.innova4d.interf.*;
+import com.innova4d.interf.Factory;
+import com.innova4d.interf.Vehiculo;
+import com.innova4d.interf.Constant;
+import com.innova4d.interf.RemoteInterface;
 
 /**
+ * ClientLauncher es el encargado de correr el cliente, conectarse con el servidor, e
+ * imprimir el resultado.
  *
+ * Los datos de conexion son heredados de la inteface Constant.
+ * Ademas, la clase solo sabe manejar la clase Vehiculo, y solo
+ * tiene acceso a la interface RemoteInterface.*
+ *
+ * @author <a href="mailto:mauricio.gracianoaz@udlap.mx">Mauricio Graciano - 149605</a>
+ * @author <a href="mailto:alan.perezco@udlap.mx">Alan Perez - 150294</a>
+ * @author <a href="mailto:daniel.torrez @udlap.mx">Daniel Alberto - 146995</a>
+ * @version 1.7
+ * @since February 2017
  */
 
 public class ClientLauncher implements Constant {
-	
+
+    /**
+     *
+     * @param args parametros de inicializacion del programa
+     * @throws RemoteException Si ocurre algun problema con la conexion
+     * @throws NotBoundException Si no esta ligada la interface al id 
+     */  	
 	public static void main(String[] args) throws RemoteException, NotBoundException {
         // Busca el servidor en en la dirrecion definida por Constant.RMI_ADDRESS,
         // en puerto el puerto defindo por Constant.RMI_PORT.
@@ -34,13 +54,14 @@ public class ClientLauncher implements Constant {
     }
 
     /**
+     * Metodo encargado de recibir los vehiculos y llevarlos a traves de la pista.
+     * En esta implementación, el servidor es el encargado de crear y almacenar
+     * los vehiculos, mientras que el cliente solo manda la solicutd para moverlos.
      *
-     * @param mode Matriz con todos los valores de los vehiculos
-     * @throws RemoteException
-     * @throws NotBoundException
+     * @param remote Interfaze ligada al servidor
+     * @throws RemoteException Si occure algun problema con la conexion
      */
-    private static void vehiculosClient(final RemoteInterface remote) 
-        throws RemoteException, NotBoundException 
+    private static void vehiculosClient(final RemoteInterface remote) throws RemoteException 
     {	
         
         // Recorre los vehiculos:
@@ -78,12 +99,12 @@ public class ClientLauncher implements Constant {
 	}
 
     /**
-	 * Cliente que imprime la GUI (Graphical user interface) de las pistas.
-	 * @throws RemoteException 
-	 * @throws NotBoundException 
+	 * Metodo encargado de imprimir la GUI de las pistas.
+     *
+     * @param remote Interfaza ligada al servidor
+	 * @throws RemoteException Si occure algun problema con la conexion
 	 */
-	private static void guiClient (final RemoteInterface remote )
-         throws RemoteException, NotBoundException 
+	private static void guiClient (final RemoteInterface remote ) throws RemoteException
     {	
         //Obtiene la pista y se imprime cada segundo.
 		ScheduledExecutorService exec = Executors.newSingleThreadScheduledExecutor();
@@ -104,9 +125,9 @@ public class ClientLauncher implements Constant {
     /**
 	 * Imprime en consola el espacio aéreo desde la
 	 * torre de control (Servidor) en el Cliente.
-	 * ** Método que implementa guiClient() **
+	 * Método que implementa guiClient()
 	 * @param vs Matriz que contiene el espacio aéreo a imprimir.
-	 * @throws RemoteException
+	 * @throws RemoteException Si occure algun problema con la conexion
 	 */
 	private static String printPista(Vehiculo[][] vs) throws RemoteException {
 		String output = "\r=== Pista ===\n";

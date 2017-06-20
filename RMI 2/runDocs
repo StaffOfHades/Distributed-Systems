@@ -1,0 +1,3 @@
+#! /bin/bash
+
+javadoc -d doc -sourcepath Client/src:Interface/src:Serve/src -subpackages com -tag author:a:"Author:"

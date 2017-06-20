@@ -53,7 +53,7 @@ void bitacora_prog_1(char * host, char option, char ** name) {
  * Otherwise, exit the program, indicatin why it failed.
  */
 int main(int argc, char * argv[]) {
-	char *host;
+	char * host;
 
 	// 4 arguemnts are needed: program, host, option & name
 	if(argc != 4) {
