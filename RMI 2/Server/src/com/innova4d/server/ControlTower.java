@@ -17,10 +17,7 @@ public class ControlTower extends UnicastRemoteObject implements RemoteInterface
 	private Vehiculo[][] mapaPista = new Vehiculo[ANCHO][ALTURA];
 
 	private static final long serialVersionUID = 1L;
-
-	/**
- 	 * Regresa el mapa de las pistas.
- 	 */
+	
 	@Override
 	public Vehiculo[][] getMapaPistas() throws RemoteException {
 		return this.mapaPista;

@@ -8,6 +8,17 @@ import java.rmi.registry.Registry;
 
 import com.innova4d.interf.Constant;
 
+/**
+ * Implementacion del servidor, encargado de leventarlo de forma adecuada,
+ * y ligar el API necesario para recibir llamadas.
+ *
+ * @author <a href="mailto:mauricio.gracianoaz@udlap.mx">Mauricio Graciano - 149605</a>
+ * @author <a href="mailto:alan.perezco@udlap.mx">Alan Perez - 150294</a>
+ * @author <a href="mailto:daniel.torrez @udlap.mx">Daniel Alberto - 146995</a>
+ * @version 1.7
+ * @since February 2017
+ */
+
 public class ServerLauncher implements Constant {
 
 	/**

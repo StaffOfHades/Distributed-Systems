@@ -2,9 +2,9 @@ package controllers
 
 import javax.inject.Inject
 
-import play.api.Play.current
-import play.api.mvc._
 import play.api.db._
+import play.api.mvc._
+import play.api.Play.current
 
 class TestControllerInject @Inject()(db: Database) extends Controller {
 

@@ -9,8 +9,16 @@ import java.io.Serializable;
 import java.rmi.RemoteException;
 
 /**
- * Implementacion concreta de Vehiculo, en forma de Tranvia, que permite ser serializado
+ * Implementacion concreta de Vehiculo, en forma de Tranvia,
+ * que permite ser serializado.
+ *
+ * @author <a href="mailto:mauricio.gracianoaz@udlap.mx">Mauricio Graciano - 149605</a>
+ * @author <a href="mailto:alan.perezco@udlap.mx">Alan Perez - 150294</a>
+ * @author <a href="mailto:daniel.torrez @udlap.mx">Daniel Alberto - 146995</a>
+ * @version 1.7
+ * @since February 2017
  */
+
 public class Tranvia extends Vehiculo implements Serializable, ObjectInputValidation {
 	
 	// Serial Unique ID 
@@ -23,7 +31,7 @@ public class Tranvia extends Vehiculo implements Serializable, ObjectInputValida
      * @param y Posicion que ocupa en el carril
      * @param v Velocidad del tranvia
      */
-	public Tranvia(String id, int x, int y, int v) throws RemoteException {
+	public Tranvia(String id, int x, int y, int v) {
 		this.setId(id);
         this.setX(x);
 		this.setY(y);
@@ -56,25 +64,22 @@ public class Tranvia extends Vehiculo implements Serializable, ObjectInputValida
 
     @Override
     public void validateObject() throws InvalidObjectException {
-        try {
-            // El id debe existir y ser valido
-            if (this.getId() == null || this.getId().isEmpty() )
-                throw new InvalidObjectException("Id cannot be null or empty");
+        // El id debe existir y ser valido
+        if (this.getId() == null || this.getId().isEmpty() )
+            throw new InvalidObjectException("Id cannot be null or empty");
             
-            // La posicion X debe ser una coordenda no negativa
-            if (this.getX() < 0)
-                throw new InvalidObjectException("X cannot be negative");
+        // La posicion X debe ser una coordenda no negativa
+        if (this.getX() < 0)
+            throw new InvalidObjectException("X cannot be negative");
            
-            // La posicion Y debe ser una coordenda no negativa
-            if (this.getY() < 0)
-                throw new InvalidObjectException("Y cannot be negative"); 
             
-            // La velocidad debe ser un numero positivo
-            if (this.getVelocidad() <= 0)
-                throw new InvalidObjectException("Speed cannot be negative");
-        } catch (RemoteException e) {
-            e.printStackTrace();
-        }
+        // La posicion Y debe ser una coordenda no negativa
+        if (this.getY() < 0)
+            throw new InvalidObjectException("Y cannot be negative"); 
+            
+        // La velocidad debe ser un numero positivo
+        if (this.getVelocidad() <= 0)
+            throw new InvalidObjectException("Speed cannot be negative");
     }
 
 }

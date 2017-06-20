@@ -25,7 +25,7 @@ public class TestClient {
 	public static final int RMI_PORT = 8080;
 
     // Server address where its located
-    public static final String RMI_ADDRESS = "192.168.0.13";
+    public static final String RMI_ADDRESS = "localhost";
 
 	public static void main(String[] args) throws RemoteException, NotBoundException {	
         // Connect to the server
